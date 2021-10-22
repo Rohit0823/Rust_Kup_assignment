@@ -1,4 +1,4 @@
-/// number function check the number is "Even and Odd".
+/// number function check the number is "Even".
 ///
 /// #Arguments
 ///
@@ -6,7 +6,7 @@
 ///
 /// #Return
 ///
-/// return : return handle error and use value.
+/// return handle error and use value.
 pub fn is_even(value: i32) -> Result<String, String> {
     if value % 2 == 0 {
         Ok("Even".to_string())
@@ -14,7 +14,7 @@ pub fn is_even(value: i32) -> Result<String, String> {
         Err("Not even".to_string())
     }
 }
-/// number_test function check the value object.
+/// check_test function check the value object.
 ///
 /// #Arguments
 ///
@@ -22,7 +22,7 @@ pub fn is_even(value: i32) -> Result<String, String> {
 ///
 /// #Return
 ///
-///  return handle error and give output String.
+/// return handle error and give output String.
 pub fn check_test(value: i32) -> String {
     let result = is_even(value);
 
