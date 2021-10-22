@@ -18,11 +18,11 @@ pub fn is_even(value: i32) -> Result<String, String> {
 ///
 /// #Arguments
 ///
-/// result : result control the number-value
+/// result control the number-value
 ///
 /// #Return
 ///
-/// return : return handle error and give output String.
+///  return handle error and give output String.
 pub fn check_test(value: i32) -> String {
     let result = is_even(value);
 
