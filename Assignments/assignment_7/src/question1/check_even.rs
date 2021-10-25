@@ -29,6 +29,6 @@ pub fn check_test(value: i32) -> String {
     match result {
         Ok(result) => result,
 
-        Err(_) => "Error".to_string(),
+        Err(_) => "Invalid".to_string(),
     }
 }
