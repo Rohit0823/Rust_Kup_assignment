@@ -7,7 +7,7 @@
 ///
 /// #Return
 ///
-/// Return Result<T,E>
+/// Return Result<T,String>
 pub fn min_number<T: std::cmp::PartialOrd>(num1: T, num2: T) -> Result<T, String> {
     if num1 == num2 {
         Err("sample input".to_string())
