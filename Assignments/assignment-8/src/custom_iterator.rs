@@ -10,7 +10,7 @@ pub trait Iterator {
 ///
 /// current_number: It is i32 type integer which consider current_term
 ///
-/// ratio:a ration is integer value that is i32 type
+/// ratio: It is a integer value that is i32 type
 pub struct GeometricSeries {
     pub first_number: i32,
     pub current_number: i32,
