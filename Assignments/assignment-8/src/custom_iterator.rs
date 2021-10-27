@@ -6,9 +6,9 @@ pub trait Iterator {
 ///
 /// #field
 ///
-/// first_number: It is consider as first term that is i32 type
+/// first_number: It is consider first term that is i32 type
 ///
-/// current_number: It is i32 type integer which consider as current_term
+/// current_number: It is i32 type integer which consider current_term
 ///
 /// ratio:a ration is integer value that is i32 type
 pub struct GeometricSeries {
@@ -22,7 +22,7 @@ impl Iterator for GeometricSeries {
     ///
     /// #Arguments
     ///
-    /// self: self means calling method through structure as an parameter
+    /// self: self means calling method through structure parameter
     ///
     /// #Return
     ///
