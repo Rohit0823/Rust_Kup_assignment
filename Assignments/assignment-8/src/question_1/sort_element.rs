@@ -7,7 +7,7 @@ use std::fmt::Display;
 ///
 /// #Return
 ///
-/// Returns Option<T>
+/// Returns Option<&mut [T]>
 pub fn sort_item<T: std::cmp::PartialOrd + Display>(list: &mut [T]) -> Option<&mut [T]> {
     for index1 in 0..list.len() {
         let mut first = index1;
