@@ -26,7 +26,7 @@ impl Iterator for GeometricSeries {
     ///
     /// #Return
     ///
-    /// Returns Option<T> is a enum type and it can the handle error
+    /// Returns Option<i32> is a enum type and it can the handle error
     fn next(&mut self) -> Option<i32> {
         let result: Option<i32> = Some(self.current_number);
         self.current_number *= self.ratio;
@@ -43,7 +43,7 @@ impl Iterator for GeometricSeries {
     ///
     /// #Return
     ///
-    /// Returns Result<T,E> and handle the Error
+    /// Returns Result<Vec<i32>,String and handle the Error
     fn take(&mut self, next_to: i32) -> Result<Vec<i32>, String> {
         if next_to == 0 {
             return Err("sample input".to_string());
