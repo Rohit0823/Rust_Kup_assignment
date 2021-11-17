@@ -95,6 +95,6 @@ pub fn remove_element_ok() {
 
 #[test]
 pub fn remove_element_success() {
-    assert_eq!(remove_element(vec![7, 7, 1, 2, 5,], 9), vec![1, 2, 5]);
+    assert_eq!(remove_element(vec![7, 7, 1, 2, 5,], 7), vec![1, 2, 5]);
 }
 
