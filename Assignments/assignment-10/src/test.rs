@@ -90,7 +90,7 @@ pub fn add_duplicate_success() {
 
 #[test]
 pub fn remove_element_ok() {
-    assert_eq!(remove_element(vec![1, 2, 3, 3, 3], 3), vec![1, 2]);
+    assert_eq!(remove_element(vec![1, 2, 3, 3, 4], 3), vec![1, 2, 4]);
 }
 
 #[test]
