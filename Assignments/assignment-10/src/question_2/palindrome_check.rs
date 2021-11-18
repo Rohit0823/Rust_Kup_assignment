@@ -2,7 +2,7 @@
 ///
 /// #Arguments
 ///
-/// vect: vector containing the data which is i32 type
+/// vect:vector containing the data which is i32 type
 ///
 /// #Return
 ///
