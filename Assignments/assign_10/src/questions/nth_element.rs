@@ -14,12 +14,12 @@ use crate::datastore::Store::{Nil, Cons};
 ///
 /// It can return the Result in the form of T,E variants which can handle the error
 
-pub fn find_nth(position: i32, List: Store) -> Result<i32, String> {
-    if List == Nil {
+pub fn find_nth(position: i32, list: Store) -> Result<i32, String> {
+    if list == Nil {
         error!("It is Empty Box");
         return Err("provide the Input".to_string());
     }
-    let result = recursion(position - 1, List, 0);
+    let result = recursion(position - 1, list, 0);
     Ok(result)
 }
 /// find_nth function finds the nth element from the List
@@ -34,11 +34,11 @@ pub fn find_nth(position: i32, List: Store) -> Result<i32, String> {
 ///
 /// the Return type is int i32 which can store the number
 
-pub fn recursion(position: i32, List: Store, counter: i32) -> i32 {
+pub fn recursion(position: i32, list: Store, counter: i32) -> i32 {
     info!("finds the number");
-    match List {
+    match list {
         Nil => -1,
         Cons(current, _) if counter == position => current,
-        Cons(_, List) => recursion(position, *List, counter + 1),
+        Cons(_, list) => recursion(position, *list, counter + 1),
     }
 }
