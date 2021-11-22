@@ -12,7 +12,7 @@ use crate::datastore::Store::{Nil, Cons};
 ///
 /// #Return
 ///
-/// It return the Result <T,E>
+/// It return the Result<i32, String>
 
 pub fn find_nth(position: i32, list: Store) -> Result<i32, String> {
     if list == Nil {
