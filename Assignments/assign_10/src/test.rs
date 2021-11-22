@@ -2,6 +2,9 @@
 mod tests {
     use crate::datastore::Store::{Nil, Cons};
     use crate::questions::first_repeated::first_repeat;
+    use crate::questions::second_repeated::second_repeat;
+    use crate::questions::nth_element::find_nth;
+    use crate::questions::third_odd::third_odd;
     #[test]
     fn first_repeat_check() {
         let list_val = Cons(
@@ -37,7 +40,7 @@ mod tests {
         );
         assert_eq!(first_repeat(list_val), Ok(-1));
     }
-    use crate::questions::second_repeated::second_repeat;
+    
     #[test]
     fn second_repeat_check() {
         let box_array = Cons(
@@ -73,7 +76,7 @@ mod tests {
         );
         assert_eq!(second_repeat(box_array), Ok(-1));
     }
-    use crate::questions::nth_element::find_nth;
+    
     #[test]
     fn element_check() {
         let test_list = Cons(
@@ -109,7 +112,7 @@ mod tests {
         );
         assert_eq!(find_nth(7, test_list), Ok(-1));
     }
-    use crate::questions::third_odd::third_odd;
+    
     #[test]
     fn third_odd_check() {
         let test_data = Cons(
