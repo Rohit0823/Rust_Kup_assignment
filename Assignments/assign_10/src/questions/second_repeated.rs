@@ -11,7 +11,7 @@ use crate::datastore::Store::{Nil, Cons};
 ///
 /// #Return
 ///
-/// It can return the Result in the form of T,E variants which can handle the error
+/// It return the Result <T,E>
 
 
 
@@ -37,7 +37,7 @@ pub fn second_repeat(list: Store) -> Result<i32, String> {
 ///
 /// #Return
 ///
-/// Return type is int i32 which can store second repeated number in the sequence
+/// Return type is int i32
 pub fn recursion(previous: i32, list: Store, occurrence: i32) -> i32 {
     info!("finds the number");
     match list {
