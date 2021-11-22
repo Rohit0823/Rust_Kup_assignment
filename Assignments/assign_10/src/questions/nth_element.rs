@@ -22,7 +22,7 @@ pub fn find_nth(position: i32, list: Store) -> Result<i32, String> {
     let result = recursion(position - 1, list, 0);
     Ok(result)
 }
-/// find_nth function finds the nth element from the List
+/// recursion function finds the nth element from the List
 ///
 /// #Arguments
 ///
