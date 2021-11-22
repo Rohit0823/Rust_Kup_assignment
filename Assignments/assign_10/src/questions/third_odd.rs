@@ -13,7 +13,7 @@ use crate::datastore::Store::{Nil, Cons};
 ///
 /// #Return
 ///
-/// Return type is int i32 which can store third odd number in the sequence
+/// Return Result<i32, String>
 
 
 pub fn third_odd(iterable: Store) -> Result<i32, String> {
