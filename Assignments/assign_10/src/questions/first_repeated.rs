@@ -11,7 +11,7 @@ use crate::datastore::Store::{Nil, Cons};
 ///
 /// #Return
 ///
-/// It return the Result <T,E>
+/// It return the Result<i32, String>
 
 pub fn first_repeat(list: Store) -> Result<i32, String> {
     if list == Nil {
