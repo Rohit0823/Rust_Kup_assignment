@@ -7,7 +7,7 @@ use crate::datastore::Store::{Nil, Cons};
 ///
 /// #Arguments
 ///
-/// Store: It can store the data of number of sequence
+/// list: It can store the data of number of sequence
 ///
 /// #Return
 ///
