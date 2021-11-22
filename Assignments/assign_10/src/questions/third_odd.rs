@@ -35,7 +35,7 @@ pub fn third_odd(iterable: Store) -> Result<i32, String> {
 ///
 /// #Return
 ///
-/// It can return the Result in the form of T,E variants which can handle the error
+/// It return the Result <T,E>
 
 pub fn find_odd(iterable: Store, iterator: i32) -> i32 {
     info!("finds the number");
