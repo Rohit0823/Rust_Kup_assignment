@@ -11,7 +11,7 @@ use crate::datastore::Store::{Nil, Cons};
 ///
 /// #Return
 ///
-/// It can return the Result in the form of T,E variants which can handle the error
+/// It return the Result <T,E>
 
 pub fn first_repeat(list: Store) -> Result<i32, String> {
     if list == Nil {
@@ -31,7 +31,7 @@ pub fn first_repeat(list: Store) -> Result<i32, String> {
 ///
 /// #Return
 ///
-/// the Return type is int i32 which can store the first repeated number in sequence
+/// the Return type is int i32 
 
 fn consecutive(list: Store, previous_no: i32) -> i32 {
     info!("finds the number");
