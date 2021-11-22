@@ -6,13 +6,13 @@ use crate::datastore::Store::{Nil, Cons};
 ///
 /// #Arguments
 ///
-/// List: It can store the data of number of sequence
+/// list: It can store the data of number of sequence
 ///
 /// position: It can store the find value of position
 ///
 /// #Return
 ///
-/// It can return the Result in the form of T,E variants which can handle the error
+/// It return the Result <T,E>
 
 pub fn find_nth(position: i32, list: Store) -> Result<i32, String> {
     if list == Nil {
@@ -26,9 +26,11 @@ pub fn find_nth(position: i32, list: Store) -> Result<i32, String> {
 ///
 /// #Arguments
 ///
-/// List: It can store the data of numbers
+/// list: It can store the data of numbers
 ///
 /// position: It can store the find value of position
+///
+/// counter: It can used to update the list
 ///
 /// #Return
 ///
