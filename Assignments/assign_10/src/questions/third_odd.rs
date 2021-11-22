@@ -25,7 +25,7 @@ pub fn third_odd(iterable: Store) -> Result<i32, String> {
     Ok(result)
 }
 
-/// third_odd function find the third odd number in sequence
+/// find_odd function find the third odd number in sequence
 ///
 /// #Arguments
 ///
