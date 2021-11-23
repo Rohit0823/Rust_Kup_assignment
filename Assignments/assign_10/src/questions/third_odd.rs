@@ -19,7 +19,7 @@ use crate::datastore::Store::{Nil, Cons};
 pub fn third_odd(iterable: Store) -> Result<i32, String> {
     if iterable == Nil {
         error!("It is Empty Box");
-        return Err("provide the Input".parse().unwrap());
+        return Err("provide the Input".to_string());
     }
     let result = find_odd(iterable, 3);
     Ok(result)
