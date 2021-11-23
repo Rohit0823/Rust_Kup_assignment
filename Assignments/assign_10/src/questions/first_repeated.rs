@@ -38,7 +38,7 @@ fn consecutive(list: Store, previous_no: i32) -> i32 {
     match list {
         Nil => -1,
 
-        Cons(initial, _list) if initial == previous_no => initial,
+        Cons(initial, _) if initial == previous_no => initial,
 
         Cons(initial, list) => consecutive(*list, initial),
     }
