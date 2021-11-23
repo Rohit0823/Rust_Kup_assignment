@@ -42,7 +42,7 @@ pub fn find_odd(iterable: Store, iterator: i32) -> i32 {
     match iterable {
         Nil => -1,
 
-        Cons(initial, _iterable) if iterator == 1 && &initial & 1 == 1 => initial,
+        Cons(initial, _iterable) if iterator == 1 && initial & 1 == 1 => initial,
 
         Cons(initial, iterable) if &initial & 1 == 1 => find_odd(*iterable, iterator - 1),
 
