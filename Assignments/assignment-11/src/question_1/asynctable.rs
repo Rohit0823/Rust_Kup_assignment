@@ -1,16 +1,15 @@
 use log::*;
-/// import the necessary modules
 use async_std::task;
 use std::time::Duration;
-/// print_table: asynchronous function is used to print two tables asynchronously
+/// Async Function 'print_table' prints multiplication table of 2 and 3 asynchronously
 ///
 /// #Arguments
 ///
-/// There is no arguments pass here
+/// There is no arguments passed here
 ///
 /// #Return
 ///
-/// the return type is tuple of both the tables
+/// there is no return type
 
 pub async fn print_table() {
     use futures::future::join;
