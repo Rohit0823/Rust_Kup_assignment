@@ -1,16 +1,15 @@
 use log::*;
-/// import the necessary modules
 use std::thread;
 use std::time::Duration;
-/// return_data: function returns data in an asynchronous manner
+/// Function 'return_data' prints data in asynchronous fashion
 ///
 /// #Arguments
 ///
-/// There is no arguments pass here
+/// There is no arguments passed here
 ///
 /// #Return
 ///
-/// the return type is JoinHandle, which can owned the value
+/// there is no return type
 pub fn return_data() {
     let element = thread::spawn(|| {
         for data in 1..10 {
