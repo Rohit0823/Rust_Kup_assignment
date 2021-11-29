@@ -1,14 +1,14 @@
 use log::*;
 
-    /// Struct: It contains the data of the book
+    /// Struct: Structure contains the data of the book
     ///
     /// #fields
     ///
-    /// accession_number: It is store Vec<i32> type
+    /// accession_number: accession_number store Vec<i32> type
     ///
-    /// author: It is store Vec<String> type
+    /// author: author store Vec<String> type
     ///
-    /// book_title: It is store Vec<String> type
+    /// book_title: book_title store Vec<String> type
     ///
     /// flag: flag value tell about the status
 pub struct Books {
@@ -19,7 +19,7 @@ pub struct Books {
 }
 
 impl Books {
-    /// display_book: this function is used to add the book details in the data
+    /// display_book: function is used to add the book details in the data
     ///
     /// #Arguments
     ///
@@ -44,11 +44,11 @@ impl Books {
         }
         Ok(true)
     }
-    /// add_new_book: It is used to add the new book
+    /// add_new_book: add_new_book used to add the new book
     ///
     /// #Arguments
     ///
-    /// book_name: A book_name is the Structure of an Object
+    /// book_name: book_name is the Structure of an Object
     ///
     /// #Return
     ///
@@ -72,11 +72,11 @@ impl Books {
 
         Ok(true)
     }
-    /// display_author_name: It gives the book information related to the author
+    /// display_author_name: display_author_name gives the book information related to the author
     ///
     /// #Arguments
     ///
-    /// author_check: it is String type which store author name
+    /// author_check: author_check is String type which store author name
     ///
     /// #Return
     ///
@@ -99,11 +99,11 @@ impl Books {
         }
         Ok(true)
     }
-    /// display_particular_title: It gives the book information related to the title
+    /// display_particular_title: display_particular_title gives the book information related to the title
     ///
     /// #Arguments
     ///
-    /// title_check: it is String type which store title_name
+    /// title_check: title_check is String type which store title_name
     ///
     /// #Return
     ///
@@ -127,11 +127,11 @@ impl Books {
         }
         Ok(1)
     }
-    /// total_book: It represent the total number of books
+    /// total_book: total_book represent the total number of books
     ///
     /// #Arguments
     ///
-    /// &self: it is self type parameter
+    /// &self: &self is a self type parameter
     ///
     /// #Return
     ///
@@ -143,11 +143,11 @@ impl Books {
             false => None,
         }
     }
-    /// issue_book: It can used to issue the book and update the data
+    /// issue_book: issue_book is used to issue the book and update the data
     ///
     /// #Arguments
     ///
-    /// book_name: it is a string type which tell about the issued book
+    /// book_name: book_name is a string type which tell about the issued book
     ///
     /// #Return
     ///
