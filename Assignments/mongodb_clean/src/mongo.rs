@@ -4,7 +4,7 @@ use mongodb::{
     error::Result,
     sync::Client
 };
-fn main() -> Result<()> {
+fn _add_user() -> Result<()> {
     env_logger::init();
     log::info!("starting up");
     // Create the client by passing in a MongoDB connection string.
