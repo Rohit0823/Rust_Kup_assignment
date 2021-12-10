@@ -1,10 +1,10 @@
-    // the sync version of the Client is in the `sync`
+// the sync version of the Client is in the `sync`
 use mongodb::{
     bson::doc,
     error::Result,
     sync::Client
 };
-pub fn main() -> Result<()> {
+fn _add_user() -> Result<()> {
     env_logger::init();
     log::info!("starting up");
     // Create the client by passing in a MongoDB connection string.
@@ -33,4 +33,3 @@ pub fn main() -> Result<()> {
     coll.insert_many(new_pets, None)?;
     Ok(())
 }
-
