@@ -1,9 +1,18 @@
-// the sync version of the Client is in the `sync`
+    // the sync version of the Client is in the `sync`
 use mongodb::{
     bson::doc,
     error::Result,
     sync::Client
 };
+    // _add_user is a function that connect with connection string
+    //
+    // #Arguments
+    //
+    // No Arguments
+    //
+    // #Return
+    //
+    // Return Result<()> type
 fn _add_user() -> Result<()> {
     env_logger::init();
     log::info!("starting up");
