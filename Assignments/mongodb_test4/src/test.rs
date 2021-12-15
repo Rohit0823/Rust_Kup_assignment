@@ -1,5 +1,5 @@
 
-pub fn add_user(name: &str) -> String {
+pub fn _add_user(name: &str) -> String {
     format!("new_pets {}", name)
 }
 pub use crate::mongodb_rust::_add_user;
