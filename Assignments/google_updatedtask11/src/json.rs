@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+
 /// main is a function that can use to get the URL path of the request
 ///
 /// #Arguments
@@ -7,16 +8,17 @@ use std::collections::HashMap;
 ///
 /// #Return
 ///
-/// Return Result<()> type
+/// Return Result<std::string::String> type
 
-pub fn google_hit() -> reqwest::Result<()> {
-    env_logger::init();
+pub fn google_hit(val: std::string::String) -> reqwest::Result<std::string::String> {
     log::info!("starting");
     let content = reqwest::blocking::get("https://pokeapi.co/api/v2/pokemon-species/ditto")?
         .json::<HashMap<String, serde_json::Value>>()?;
-    let _check_1 = &content["names"][1]["name"];
-    let _check_2 = &content["egg_groups"][0]["name"];
-
+    let container = content["color"][val].to_owned();
+    let var_name = match container {
+        serde_json::Value::String(var_name) => var_name,
+        _ => "red".to_string(),
+    };
     println!("{:#?}", content.get("names"));
-    Ok(())
+    Ok(var_name)
 }
